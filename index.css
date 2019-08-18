@@ -1,0 +1,231 @@
+html,body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: Arial, sans-serif;
+	background: url(img/desktopXP.jpg) no-repeat, #3b6ea5;
+	background-position: center center;
+	background-size: 100%;
+}
+h1,h2,h3,h4,h5,h6,ul,li {
+	margin: 0;
+	padding: 0;
+}
+.window {
+	display: none;
+	position: absolute;
+	overflow: hidden;
+	padding-top: 40px;
+	width: 600px;
+	height: 750px;
+	background: #fff;
+	border: 1px solid #ccc;
+	-webkit-box-shadow: 2px 2px 10px #ccc;
+	box-shadow: 2px 2px 10px #ccc;
+	border-radius: 8px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	z-index: 5;
+}
+.panel {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #25c6ff;
+}
+.btns {
+	display: inline-block;
+	float: right;
+	padding: 5px;
+}
+.btn {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.btn-close {
+	background: #ff3939;
+}
+.btn-max {
+	background: #3fbd4a;
+}
+.btn-min {
+	background: #ededed;
+}
+.window-content {
+	padding: 10px;
+	background: url(img/trava.jpg) 0 0 repeat, green;
+}
+/*FOOTBALL*/
+.ball-box {
+	position: relative;
+	margin: 10px;
+	height: 600px;
+	background-color: #fff;
+	text-align: center;
+	border: 3px solid grey
+	-webkit-box-shadow: 0px 0px 10px #ccc;
+			box-shadow: 0px 0px 10px #ccc;
+}
+.btn-game {
+	display: inline-block;
+	margin: 40px auto 0 auto;
+	padding: 20px;
+	font-size: 20px;
+	text-align: center;
+	-webkit-box-shadow: inset 0px 0px 10px #ccc;
+			box-shadow: inset 0px 0px 10px #ccc;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.ball {
+	position: absolute;
+	top: 0;
+	left: 100px;
+	margin-bottom: 50px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+	background-image: url(img/football.png);
+	-webkit-background-size: cover;
+			background-size: cover;
+	z-index: 1;
+}
+.vorota {
+	position: absolute;
+	bottom: -75px;
+	right: 0;
+	width: 200px;
+	height: 200px;
+	background-image: url(img/vorota.png);
+	-webkit-background-size: cover;
+			background-size: cover;
+}
+.man {
+	position: absolute;
+	bottom: -120px;
+	left: -170px;
+	height: 200px;
+	width: 150px;
+	background-image: url(img/man.png);
+	-webkit-background-size: cover;
+			background-size: cover;
+}
+.power-box {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 200px;
+	height: 200px;	
+}
+@keyframes powerShot {
+	0% { padding-top: 0; }
+	10% { padding-top: 20%; }
+	20% { padding-top: 40%; }
+	30% { padding-top: 60%; }
+	40% { padding-top: 80%; }
+	50% { padding-top: 100%; }
+	60% { padding-top: 80%; }
+	70% { padding-top: 60%; }
+	80% { padding-top: 40%; }
+	90% { padding-top: 20%; }
+	100% { padding-top: 0; }
+}
+.power-wrap {
+	overflow: hidden;
+	display: inline-block;
+	padding-top: 0;
+	height: 100%;
+	box-sizing: border-box;
+	animation: powerShot 2s infinite linear;
+}
+.power {
+	display: inline-block;
+	width: 30px;
+	height: 100%;
+	background: #ff400d;
+	background: -webkit-gradient(linear, center top, center bottom, from(#ff400d), to(#ff826e));
+	border-radius: 10px;
+}
+.goal {
+	margin-top: 30px;
+	font-size: 36px;
+	color: green;
+}
+.taskbar {
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	padding: 2px;
+	width: 100vw;
+	height: 28px;
+	background-color: #d4d0c7;
+}
+.right-bar {
+	position: fixed;
+	right: 0;
+	margin-right: 5px;
+}
+.start-btn {
+	width: 62px;
+	height: 25px;
+	background: #d4d0c7;
+	font-size: 13px;
+	font-weight: bold;
+}
+.start-btn img {
+	float: left;
+	padding-right: 2px;
+	width: 14px;
+	height: 14px;
+}
+.time {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 25px;
+	border: 1px solid black;
+}
+.football-icon {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	display: inline-block;
+	overflow: hidden;
+	padding-bottom: 20px;
+	height: 64px;
+	width: 64px;
+	background: url(img/ball-icon.png) 0 0 no-repeat;
+	-webkit-background-size: 64px 64px;
+	background-size: 64px 64px;
+}
+.file-name-wrap {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+
+}
+.file-name {
+	width: 64px;
+	overflow: hidden;
+	font-size: 14px;
+	font-weight: bold;
+	white-space: nowrap;
+	-ms-word-wrap: normal;
+	word-wrap: normal;
+	-ms-text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
